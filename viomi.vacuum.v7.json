@@ -1,0 +1,158 @@
+{
+	"deviceMapping": {
+		"id": [
+			"viomi.vacuum.v7"
+		],
+		"channels": [
+			{
+				"property": "battary_life",
+				"friendlyName": "Battery Level",
+				"channel": "battery",
+				"type": "Number",
+				"refresh": true,
+				"ChannelGroup": "Status",
+				"actions": []
+			},
+			{
+				"property": "run_state",
+				"friendlyName": "Vacuum State",
+				"channel": "state",
+				"type": "Number",
+				"refresh": true,
+				"ChannelGroup": "Status",
+				"actions": []
+			},
+			{
+				"property": "box_type",
+				"friendlyName": "Vacuum Status",
+				"channel": "boxtype",
+				"type": "Number",
+				"refresh": true,
+				"ChannelGroup": "Status",
+				"actions": []
+			},
+			{
+				"property": "mop_type",
+				"friendlyName": "Vacuum Mop Type",
+				"channel": "moptype",
+				"type": "Number",
+				"refresh": true,
+				"ChannelGroup": "Status",
+				"actions": [
+					{
+						"command": "set_mop",
+						"parameterType": "NUMBER"
+					}
+				]
+			},
+			{
+				"property": "suction_grade",
+				"friendlyName": "Vacuum Power",
+				"channel": "suctiongrade",
+				"type": "Number",
+				"refresh": true,
+				"ChannelGroup": "Status",
+				"actions": [
+					{
+						"command": "set_suction",
+						"parameterType": "NUMBER"
+					}
+				]
+			},
+			{
+				"property": "water_grade",
+				"friendlyName": "Vacuum Mop Type",
+				"channel": "watergrade",
+				"type": "Number",
+				"refresh": true,
+				"ChannelGroup": "Status",
+				"actions": [
+					{
+						"command": "set_suction",
+						"parameterType": "NUMBER"
+					}
+				]
+			},
+			{
+				"property": "err_state",
+				"friendlyName": "Error State",
+				"channel": "errorstate",
+				"type": "Number",
+				"refresh": true,
+				"ChannelGroup": "Status",
+				"actions": []
+			},
+			{
+				"property": "is_mop",
+				"friendlyName": "Vacuum Type",
+				"channel": "ismop",
+				"type": "Number",
+				"refresh": true,
+				"ChannelGroup": "Status",
+				"actions": [
+					{
+						"command": "set_mop",
+						"parameterType": "NUMBER"
+					}
+				]
+			},
+			{
+				"property": "set_charge",
+				"friendlyName": "Send to Dock",
+				"channel": "setcharge",
+				"type": "Switch",
+				"refresh": true,
+				"ChannelGroup": "Actions",
+				"actions": [
+					{
+						"command": "set_charge",
+						"parameterType": "ONOFF"
+					}
+				]
+			},
+			{
+				"property": "set_language",
+				"friendlyName": "Set Language",
+				"channel": "setlanguage",
+				"type": "Number",
+				"refresh": true,
+				"ChannelGroup": "Actions",
+				"actions": [
+					{
+						"command": "set_language",
+						"parameterType": "NUMBER"
+					}
+				]
+			},
+			{
+				"property": "set_light",
+				"friendlyName": "Set Light",
+				"channel": "setlight",
+				"type": "Switch",
+				"refresh": true,
+				"ChannelGroup": "Actions",
+				"actions": [
+					{
+						"command": "set_light",
+						"parameterType": "ONOFF"
+					}
+				]
+			},
+			{
+				"property": "set_mode_withroom",
+				"friendlyName": "Set Mode",
+				"channel": "setlanguage",
+				"type": "String",
+				"refresh": true,
+				"ChannelGroup": "Actions",
+				"actions": [
+					{
+						"command": "set_mode_withroom",
+						"parameterType": "STRING"
+					}
+				]
+			},
+			
+		]
+	}
+}
