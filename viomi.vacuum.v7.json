@@ -141,7 +141,7 @@
 			{
 				"property": "set_mode_withroom",
 				"friendlyName": "Set Mode",
-				"channel": "setlanguage",
+				"channel": "setmode",
 				"type": "String",
 				"refresh": true,
 				"ChannelGroup": "Actions",
